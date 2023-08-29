@@ -2,14 +2,19 @@
 
 import { motion } from 'framer-motion';
 import { FC } from 'react';
+import { useSectionInView } from '../lib/hooks';
 import SessionHeading from './SessionHeading';
 
 interface AboutProps {}
 
 const About: FC<AboutProps> = ({}) => {
+  const { ref } = useSectionInView('About', 0.5);
+
   return (
     <motion.section
-      className='flex flex-col items-center justify-center mb-28 max-w-[45rem] sm:mb-40'
+      ref={ref}
+      className='flex flex-col items-center justify-center mb-28 max-w-[45rem] sm:mb-40 scroll-mt-[24rem]'
+      id='about'
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
