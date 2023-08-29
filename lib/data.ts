@@ -2,7 +2,7 @@ import chatter from '@/public/chatter.png';
 import flashcards from '@/public/flashcards.png';
 import githubfinder from '@/public/githubFinder.png';
 import icons from '@/public/icons.png';
-import { Camera, Dumbbell, GraduationCap } from 'lucide-react';
+import { BatteryFull, Camera, Dumbbell, GraduationCap } from 'lucide-react';
 import React from 'react';
 
 export const links = [
@@ -117,29 +117,32 @@ export const skillsData = [
   'Framer Motion',
 ] as const;
 
+// We use 'React.createElement(GraduationCap)' for icon, cos this is .ts file, we can't use jsx in .ts file
+// If it's .tsx file, we can use 'icon: <GraduationCap />'
+// React.createElement() is actually what's going on behind the scene anyway
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'Graduated Mohawk College',
+    location: 'Hamilton, ON',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: React.createElement(Camera),
-    date: '2019',
+      'I graduated after 2 years of studying. I immediately found a job as a front-end developer.',
+    icon: React.createElement(GraduationCap),
+    date: 'Feb 2023',
   },
   {
     title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    location: 'Burlington, ON',
     description:
       'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
     icon: React.createElement(Dumbbell),
-    date: '2019 - 2021',
+    date: '2022',
   },
   {
     title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    location: 'Oakville, ON',
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(GraduationCap),
-    date: '2021 - present',
+    icon: React.createElement(BatteryFull),
+    date: '2023 - present',
   },
 ] as const;

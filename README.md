@@ -10,6 +10,8 @@
 
 1. use context hook to implement this function
 
+- 'npm i react-vertical-timeline-component' makes the experience section
+
 ## Questions
 
 - in activeSectionContext.tsx
@@ -23,3 +25,11 @@ type SectionName = (typeof links)[number]['name'];
 ```
 <Project {...project} />
 ```
+
+## Issues
+
+- Framer-motion literally takes each component into client side rendering, ain't a good choice for large project.
+
+- react-vertical-timeline-component also only works on CSR.
+
+- react-vertical-timeline-component doesn't support Tailwind CSS.
