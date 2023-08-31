@@ -13,9 +13,11 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
+import { useActiveSectionContext } from '../context/ActiveSectionContext';
 import { useSectionInView } from '../lib/hooks';
 
 const Intro: FC = () => {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { ref } = useSectionInView('Home', 0.5);
 
   return (
@@ -54,7 +56,7 @@ const Intro: FC = () => {
               height='240'
               quality='100'
               priority={true}
-              className='rounded-full border-2 border-slate-600 object-cover shadow-xl'
+              className='rounded-full border-4 border-gray-400 object-cover shadow-xl'
             />
           </motion.div>
           <motion.span
@@ -83,53 +85,57 @@ const Intro: FC = () => {
         }}
       >
         <div className='flex items-center justify-center gap-4 sm:gap-6 w-[30rem] sm:w-[36rem] px-4'>
-          <Link
+          <a
             href='#contact'
-            className='group flex items-center justify-center gap-2 sm:gap-4 w-1/2 bg-gray-900 text-white px-2 sm:px-7 py-3 border border-gray-100 rounded-full shadow-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+            className='group flex items-center justify-center gap-2 sm:gap-4 w-1/2 bg-gray-900 text-white px-2 sm:px-7 py-3 border border-gray-100 rounded-full shadow-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:text-white/60'
+            onClick={() => {
+              setActiveSection('Contact');
+              setTimeOfLastClick(Date.now());
+            }}
           >
             Contact me here{' '}
             <CornerRightDown className='opacity-70 group-hover:translate-x-1 transition' />
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://drive.google.com/file/d/1YjfnPX1I-6dqdR7ZtDSZ5g7YrvRid_2j/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
-            className='group flex items-center justify-center gap-2 sm:gap-4 bg-gray-200 border border-gray-400 w-1/2 px-4 sm:px-7 py-3 rounded-full shadow-md outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'
+            className='group flex items-center justify-center gap-2 sm:gap-4 bg-gray-200 border border-gray-400 w-1/2 px-4 sm:px-7 py-3 rounded-full shadow-md outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
           >
             My Resume{' '}
             <DownloadCloud className='opacity-70 group-hover:translate-x-1 transition' />
-          </Link>
+          </a>
         </div>
         <div className='flex mt-8 gap-8'>
-          <Link
+          <a
             href='https://www.linkedin.com/in/xiaobingfeng/'
             rel='noopener noreferrer'
             target='_blank'
-            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200'
+            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200  dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
           >
             <Linkedin />
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://github.com/lookingforcharlie'
             rel='noopener noreferrer'
             target='_blank'
-            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200'
+            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200  dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
           >
             <Github />
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://twitter.com/CharlieFeng2020'
             rel='noopener noreferrer'
             target='_blank'
-            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200'
+            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200 dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
           >
             <Twitter />
-          </Link>
+          </a>
           <a
             href='mailto:charliefeng2020@gmail.com'
             rel='noopener noreferrer'
             target='_blank'
-            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200'
+            className='bg-white p-4 text-gray-700 rounded-full shadow-lg hover:scale-110 transition border border-gray-200 dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
           >
             <Mail />
           </a>

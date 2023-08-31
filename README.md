@@ -12,6 +12,24 @@
 
 - 'npm i react-vertical-timeline-component' makes the experience section
 
+- use Server Action in Next.JS
+
+```
+const nextConfig = {
+  experimental: {
+    serverActions: true,
+  },
+};
+```
+
+- 'npm i resend' to implement send email function.
+
+- Style the email using 'https://react.email/'
+
+1. npm i @react-email/components @react-email/tailwind
+
+- https://react-hot-toast.com/, 'npm i react-hot-toast'
+
 ## Questions
 
 - in activeSectionContext.tsx
@@ -33,3 +51,8 @@ type SectionName = (typeof links)[number]['name'];
 - react-vertical-timeline-component also only works on CSR.
 
 - react-vertical-timeline-component doesn't support Tailwind CSS.
+
+## Expected Update
+
+- [ ] Contact Form: clear the input area after submit
+- [ ] Change the color of icons in footer

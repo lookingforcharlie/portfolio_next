@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -16,5 +16,8 @@ const config: Config = {
     },
   },
   plugins: [],
-}
-export default config
+  // Now the page wouldn't switch base on the system theme mode automatically
+  // Now we need to add class to trigger switching mode
+  darkMode: 'class',
+};
+export default config;

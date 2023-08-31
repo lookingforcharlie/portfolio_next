@@ -2,7 +2,7 @@ import chatter from '@/public/chatter.png';
 import flashcards from '@/public/flashcards.png';
 import githubfinder from '@/public/githubFinder.png';
 import icons from '@/public/icons.png';
-import { BatteryFull, Camera, Dumbbell, GraduationCap } from 'lucide-react';
+import { BatteryFull, Dumbbell, GraduationCap } from 'lucide-react';
 import React from 'react';
 
 export const links = [
@@ -135,7 +135,7 @@ export const experiencesData = [
     description:
       'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
     icon: React.createElement(Dumbbell),
-    date: '2022',
+    date: 'Jan 2022 - May 2022',
   },
   {
     title: 'Full-Stack Developer',
@@ -143,6 +143,6 @@ export const experiencesData = [
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(BatteryFull),
-    date: '2023 - present',
+    date: 'March 2023 - present',
   },
 ] as const;

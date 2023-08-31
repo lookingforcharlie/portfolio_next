@@ -8,18 +8,30 @@ import SessionHeading from './SessionHeading';
 interface AboutProps {}
 
 const About: FC<AboutProps> = ({}) => {
-  const { ref } = useSectionInView('About', 0.5);
+  const { ref } = useSectionInView('About');
 
   return (
     <motion.section
       ref={ref}
-      className='flex flex-col items-center justify-center mb-28 max-w-[45rem] sm:mb-40 scroll-mt-[24rem]'
+      className='flex flex-col items-center justify-center mb-28 max-w-[45rem] sm:mb-40 scroll-mt-[24rem] mt-12'
       id='about'
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
+      // initial={{ opacity: 0, scale: 0 }}
+      // animate={{ opacity: 1, scale: 1 }}
+      // transition={{
+      //   type: 'tween',
+      //   duration: 0.2,
+      // }}
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
       transition={{
-        type: 'tween',
-        duration: 0.2,
+        duration: 2,
+      }}
+      viewport={{
+        once: true,
       }}
     >
       {/* <h1 className='text-3xl font-medium capitalize mb-6'>About me </h1> */}
