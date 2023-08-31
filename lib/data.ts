@@ -164,3 +164,40 @@ export const experiencesData = [
     date: 'March 2023 - present',
   },
 ] as const;
+
+// for backup
+const dataFromPreviousPortfolio = [
+  {
+    title: 'Historic Villages',
+    imgUrl: '/assets/historicValliges.png',
+    stack: ['JavaScript', 'BootStrap', 'Map API'],
+    linkLive: 'https://historic-villages.vercel.app/',
+    linkGit: 'https://github.com/lookingforcharlie/historicVillages',
+    demo: '#',
+  },
+  {
+    title: 'Weather Application',
+    imgUrl: '/assets/weatherapp530.png',
+    stack: ['React', 'TypeScript', 'Weather API'],
+    linkLive: 'https://weather-app-minimalist.netlify.app/',
+    linkGit:
+      'https://github.com/lookingforcharlie/weather-app-react-typescript',
+    demo: '#',
+  },
+  {
+    title: 'Minimalist To-do List',
+    imgUrl: '/assets/todolist_minimal.png',
+    stack: ['React', 'LocalStorage'],
+    linkLive: 'https://blackandwhite-todolist.netlify.app/',
+    linkGit: 'https://github.com/lookingforcharlie/todo-list-react',
+    demo: '#',
+  },
+  {
+    title: 'First To-do List',
+    imgUrl: '/assets/todolist_firebase.png',
+    stack: ['React', 'TypeScript', 'Firebase'],
+    linkLive: 'https://todolist-firebase-ten.vercel.app/',
+    linkGit: 'https://github.com/lookingforcharlie/todo-list-react',
+    demo: '#',
+  },
+];

@@ -55,7 +55,7 @@ const Header: FC<HeaderProps> = ({}) => {
                   'flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300',
                   {
                     // the text color when focused
-                    'text-gray-950 dark:text-gray-200':
+                    'text-gray-950 dark:text-gray-100':
                       activeSection === link.name,
                   }
                 )}
