@@ -55,10 +55,13 @@ type SectionName = (typeof links)[number]['name'];
 - [ ] Fix Contact Form: clear the input area after submit
 - [ ] Change the color of icons in footer
 - [ ] Redesign the Skills section
-- [ ] Update the content of Experience
+- [x] Update the content of Experience
 - [ ] Rewrite About content
 - [ ] Fix the FlashCards project
 - [ ] Modify the bg color for dark mode
 - [ ] Modify the bg color for light mode
 - [ ] Add projects for backup
 - [ ] Modify the motion effect for Projects section
+- [ ] Fix the bug of iPhone12 Pro screen draggable horizontally
+- [ ] Fix the bug of Header text color when focused in dark mode
+- [ ] favicon isn't loaded online
