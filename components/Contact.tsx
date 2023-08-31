@@ -40,7 +40,7 @@ const Contact: FC<ContactProps> = ({}) => {
       <p className='text-gray-700 -mt-6 dark:text-white/80'>
         Please contact me directly at{' '}
         <a
-          className='underline text-blue-400'
+          className='underline text-blue-700 dark:text-blue-400'
           href='mailto:charliefeng2020@gmail.com'
         >
           My Email

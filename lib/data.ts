@@ -2,6 +2,7 @@ import chatter from '@/public/chatter.png';
 import flashcards from '@/public/flashcards.png';
 import githubfinder from '@/public/githubFinder.png';
 import icons from '@/public/icons.png';
+import mathGame from '@/public/mathGame.png';
 import { BatteryFull, Dumbbell, GraduationCap } from 'lucide-react';
 import React from 'react';
 
@@ -44,6 +45,7 @@ export const projectsData = [
       'tRPC',
       'Prisma',
       'Tailwind CSS',
+      'AWS S3 Amplify',
     ],
     imageUrl: icons,
     webLink: 'https://icons.meetxb.com',
@@ -66,22 +68,32 @@ export const projectsData = [
     gitLink: 'https://github.com/lookingforcharlie/real_time_chatter',
     demo: 'https://youtu.be/fiGdjj3IXo8',
   },
+  // {
+  //   title: 'Flashcards',
+  //   description:
+  //     'A MERN Stack App empowering users to Create, Edit, and Delete Flashcards',
+  //   tags: [
+  //     'React',
+  //     'TypeScript',
+  //     'Node.JS',
+  //     'Express.JS',
+  //     'MongoDB',
+  //     'Tailwind CSS',
+  //   ],
+  //   imageUrl: flashcards,
+  //   webLink: 'https://wdr-flashcards-client.vercel.app/',
+  //   gitLink: 'https://github.com/lookingforcharlie/wdr-flashcards-server',
+  //   demo: '#',
+  // },
   {
-    title: 'Flashcards',
+    title: 'Mobile Math Game',
     description:
-      'A MERN Stack App empowering users to Create, Edit, and Delete Flashcards',
-    tags: [
-      'React',
-      'TypeScript',
-      'Node.JS',
-      'Express.JS',
-      'MongoDB',
-      'Tailwind CSS',
-    ],
-    imageUrl: flashcards,
-    webLink: 'https://wdr-flashcards-client.vercel.app/',
-    gitLink: 'https://github.com/lookingforcharlie/wdr-flashcards-server',
-    demo: '#',
+      'A Full-Stack Mobile App with user authentication and authorization capabilities',
+    tags: ['React Native', 'Node.JS', 'Express.JS', 'SQLite', 'Redis'],
+    imageUrl: mathGame,
+    webLink: 'https://youtu.be/IArmm4ae5hw',
+    gitLink: 'https://github.com/lookingforcharlie/math-game',
+    demo: 'https://youtu.be/IArmm4ae5hw',
   },
   {
     title: 'GitHub Dev Finder',
@@ -97,24 +109,30 @@ export const projectsData = [
 
 export const skillsData = [
   'HTML',
-  'CSS',
+  'CSS/SASS',
   'JavaScript',
+  'ES6',
   'TypeScript',
   'React',
+  'ReactNative',
   'Next.js',
   'Node.js',
   'Git',
   'GitHub',
-  'Tailwind',
+  'AWS',
+  'Tailwind CSS',
   'Prisma',
-  'MongoDB',
   'PostgreSQL',
+  'MongoDB',
+  'Redis',
   'Express',
   'Python',
+  'Framer Motion',
   'Java',
   'C#',
   'PHP',
-  'Framer Motion',
+  'jQuery',
+  'WordPress',
 ] as const;
 
 // We use 'React.createElement(GraduationCap)' for icon, cos this is .ts file, we can't use jsx in .ts file
@@ -125,7 +143,7 @@ export const experiencesData = [
     title: 'Graduated Mohawk College',
     location: 'Hamilton, ON',
     description:
-      'I graduated after 2 years of studying. I immediately found a job as a front-end developer.',
+      'I graduated from Mohawk College as a Software Management Major. I built 45 projects using 7 different programming languages, and I am ready to do some damage in the digital world.',
     icon: React.createElement(GraduationCap),
     date: 'Feb 2023',
   },
@@ -133,7 +151,7 @@ export const experiencesData = [
     title: 'Front-End Developer',
     location: 'Burlington, ON',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+      'I worked for a E-Commerce Company called Evenica as a Web Developer. In there, I up-skilled to the full stack and solved real work problems.',
     icon: React.createElement(Dumbbell),
     date: 'Jan 2022 - May 2022',
   },

@@ -30,8 +30,6 @@ const nextConfig = {
 
 - https://react-hot-toast.com/, 'npm i react-hot-toast'
 
-## Questions
-
 - in activeSectionContext.tsx
 
 ```
@@ -54,5 +52,13 @@ type SectionName = (typeof links)[number]['name'];
 
 ## Expected Update
 
-- [ ] Contact Form: clear the input area after submit
+- [ ] Fix Contact Form: clear the input area after submit
 - [ ] Change the color of icons in footer
+- [ ] Redesign the Skills section
+- [ ] Update the content of Experience
+- [ ] Rewrite About content
+- [ ] Fix the FlashCards project
+- [ ] Modify the bg color for dark mode
+- [ ] Modify the bg color for light mode
+- [ ] Add projects for backup
+- [ ] Modify the motion effect for Projects section

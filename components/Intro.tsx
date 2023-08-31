@@ -56,11 +56,11 @@ const Intro: FC = () => {
               height='240'
               quality='100'
               priority={true}
-              className='rounded-full border-4 border-gray-400 object-cover shadow-xl'
+              className='rounded-full border-4 border-gray-400 object-cover shadow-xl w-[12rem] h-[12rem] sm:w-[16rem] sm:h-[16rem]'
             />
           </motion.div>
           <motion.span
-            className='text-6xl absolute bottom-0 right-0'
+            className='text-5xl sm:text-6xl absolute bottom-0 right-0'
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -84,10 +84,10 @@ const Intro: FC = () => {
           delay: 0.1,
         }}
       >
-        <div className='flex items-center justify-center gap-4 sm:gap-6 w-[30rem] sm:w-[36rem] px-4'>
+        <div className='flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-[30rem] sm:w-[36rem] px-4'>
           <a
             href='#contact'
-            className='group flex items-center justify-center gap-2 sm:gap-4 w-1/2 bg-gray-900 text-white px-2 sm:px-7 py-3 border border-gray-100 rounded-full shadow-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:text-white/60'
+            className='group flex items-center justify-center gap-2 sm:gap-4 w-1/2 bg-gray-900 text-white px-2 sm:px-7 py-2 sm:py-3 border border-gray-100 rounded-full shadow-lg outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition dark:text-white/60'
             onClick={() => {
               setActiveSection('Contact');
               setTimeOfLastClick(Date.now());
@@ -100,7 +100,7 @@ const Intro: FC = () => {
             href='https://drive.google.com/file/d/1YjfnPX1I-6dqdR7ZtDSZ5g7YrvRid_2j/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
-            className='group flex items-center justify-center gap-2 sm:gap-4 bg-gray-200 border border-gray-400 w-1/2 px-4 sm:px-7 py-3 rounded-full shadow-md outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
+            className='group flex items-center justify-center gap-2 sm:gap-4 bg-gray-200 border border-gray-400 w-1/2 px-4 sm:px-7 py-2 sm:py-3 rounded-full shadow-md outline-none focus:scale-105 hover:scale-105 active:scale-105 transition dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
           >
             My Resume{' '}
             <DownloadCloud className='opacity-70 group-hover:translate-x-1 transition' />

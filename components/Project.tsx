@@ -32,8 +32,8 @@ const Project: FC<ProjectProps> = (project) => {
       }}
       className='group mb-8 sm:mb-[3rem] last:mb-0'
     >
-      <section className='relative  bg-gray-200 rounded-md max-w-[30rem] sm:max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[22rem] group-odd:pl-10 hover:bg-gray-300 hover:shadow-lg transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20'>
-        <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 max-w-[70%] sm:max-w-[50%] flex flex-col h-full group-odd:ml-[18rem]'>
+      <section className='relative  bg-gray-200 rounded-md max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[22rem] sm:group-odd:pl-10 hover:bg-gray-300 hover:shadow-lg transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20'>
+        <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-odd:ml-[18rem]'>
           <h1 className='text-2xl font-semibold'>{title}</h1>
           <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>
             {description}
@@ -87,7 +87,8 @@ const Project: FC<ProjectProps> = (project) => {
           src={imageUrl}
           alt={title}
           quality={95}
-          className='rounded-xl absolute top-8 left-[22rem] sm:-right-40 sm:w-[28.5rem] shadow-2xl transition group-hover:-translate-x-3 
+          // Images will be hidden on small size screen
+          className='rounded-xl absolute hidden sm:block top-8 left-[22rem] -right-40 sm:w-[28.5rem] shadow-2xl transition group-hover:-translate-x-3 
           group-hover:translate-y-3 
           group-hover:-rotate-2 
           group-hover:scale-[1.04] 
