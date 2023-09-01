@@ -3,6 +3,7 @@
 import Header from '@/components/Header';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 import Footer from '../components/Footer';
 import ThemeSwitch from '../components/ThemeSwitch';
@@ -27,7 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='!scroll-smooth'>
+      <Head>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <body
+        // overflow-x-hidden max-w-full here fixed the bug that page being horizontally scrollable on Mobile
         className={`${inter.className} bg-slate-100 text-gray-950 relative min-h-screen pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 overflow-x-hidden max-w-full`}
       >
         {/* Rendering background color for light mode starts */}

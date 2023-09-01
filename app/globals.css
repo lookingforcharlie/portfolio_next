@@ -9,10 +9,6 @@ html.dark {
   --line-color: rgba(255, 255, 255, 0.09);
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .borderBlack {
   @apply border border-black/10;
 }

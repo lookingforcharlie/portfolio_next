@@ -1,6 +1,10 @@
 # Portfolio@Next.JS
 
-- Date: August in 2023
+- Date: August 31, 2023
+
+## Stacks
+
+- Next.JS, App Router, Server Action, Form Action, useContext, TypeScript, Framer Motion, Resend, React Email, React Intersection Observer, React Vertical Timeline, Tailwind CSS, clsx,
 
 ## What happened
 
@@ -12,7 +16,7 @@
 
 - 'npm i react-vertical-timeline-component' makes the experience section
 
-- use Server Action in Next.JS
+- use Server Action in Next.JS, it's still in beta stage
 
 ```
 const nextConfig = {
@@ -62,6 +66,6 @@ type SectionName = (typeof links)[number]['name'];
 - [ ] Modify the bg color for light mode
 - [ ] Add projects for backup
 - [ ] Modify the motion effect for Projects section
-- [ ] Fix the bug of iPhone12 Pro screen draggable horizontally
+- [x] Fix the bug of iPhone12 Pro screen draggable horizontally
 - [ ] Fix the bug of Header text color when focused in dark mode
 - [ ] favicon isn't loaded online

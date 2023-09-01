@@ -165,7 +165,7 @@ export const experiencesData = [
   },
 ] as const;
 
-// for backup
+// The backup project from previous portfolio website
 const dataFromPreviousPortfolio = [
   {
     title: 'Historic Villages',
