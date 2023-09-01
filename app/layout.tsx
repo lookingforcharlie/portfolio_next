@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang='en' className='!scroll-smooth'>
       <Head>
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <body
         // overflow-x-hidden max-w-full here fixed the bug that page being horizontally scrollable on Mobile
