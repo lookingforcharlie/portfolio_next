@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 import Footer from '../components/Footer';
+import ScrollToTopBtn from '../components/ScrollToTopBtn';
 import ThemeSwitch from '../components/ThemeSwitch';
 import {
   default as ActiveSectionContext,
@@ -49,6 +50,7 @@ export default function RootLayout({
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
+        <ScrollToTopBtn />
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ const Skills: FC<SkillsProps> = ({}) => {
     <section
       id='skills'
       ref={ref}
-      className='mb-28 max-w-[53rem] scroll-mt-30 text-center sm:mb-44'
+      className='mb-28 max-w-[53rem] scroll-mt-[8rem] text-center sm:mb-44'
     >
       <SectionHeading title='My Skills' />
       <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>

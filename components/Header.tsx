@@ -12,6 +12,10 @@ import {
   useActiveSectionContext,
 } from '../context/ActiveSectionContext';
 
+const backToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
@@ -61,6 +65,7 @@ const Header: FC<HeaderProps> = ({}) => {
                 )}
                 onClick={() => {
                   setActiveSection(link.name);
+                  // link.name === 'Home' && backToTop();
                   setTimeOfLastClick(Date.now());
                 }}
               >

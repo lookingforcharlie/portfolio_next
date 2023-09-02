@@ -64,8 +64,9 @@ type SectionName = (typeof links)[number]['name'];
 - [ ] Fix the FlashCards project
 - [ ] Modify the bg color for dark mode
 - [ ] Modify the bg color for light mode
-- [ ] Add projects for backup
+- [x] Add projects for backup
 - [ ] Modify the motion effect for Projects section
 - [x] Fix the bug of iPhone12 Pro screen draggable horizontally
 - [ ] Fix the bug of Header text color when focused in dark mode
-- [ ] favicon isn't loaded online
+- [x] favicon isn't loaded online
+- [x] Add 'Scroll to top' button on the page

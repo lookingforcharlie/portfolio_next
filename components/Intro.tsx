@@ -24,7 +24,7 @@ const Intro: FC = () => {
     // scroll-mt-[10rem] make Header go to section precisely
     <section
       ref={ref}
-      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[10rem]'
+      className='mb-28 scroll-mt-[6rem] max-w-[150rem] text-center sm:mb-0 '
       id='home'
     >
       <div className='flex flex-col items-center justify-center'>
