@@ -57,6 +57,7 @@ type SectionName = (typeof links)[number]['name'];
 ## Expected Update
 
 - [ ] Fix Contact Form: clear the input area after submit
+- [ ] Add Location
 - [ ] Change the color of icons in footer
 - [ ] Redesign the Skills section
 - [x] Update the content of Experience

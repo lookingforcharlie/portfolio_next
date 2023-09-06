@@ -114,7 +114,7 @@ export const skillsData = [
   'ES6',
   'TypeScript',
   'React',
-  'ReactNative',
+  'React Native',
   'Next.js',
   'Node.js',
   'Git',

@@ -8,6 +8,7 @@ import {
   Github,
   Linkedin,
   Mail,
+  MapPin,
   Twitter,
 } from 'lucide-react';
 import Image from 'next/image';
@@ -36,7 +37,11 @@ const Intro: FC = () => {
           animate={{ opacity: 1, y: 0 }}
         >
           <p className='text-base md:text-xl mb-4 font-medium'>
-            Full Stack Developer
+            Full Stack Software Engineer
+          </p>
+          <p className='flex items-center justify-center text-base md:text-md mb-4 font-normal'>
+            <MapPin className='mr-2' />
+            Oakville, Ontario
           </p>
         </motion.div>
 
