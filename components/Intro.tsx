@@ -40,7 +40,7 @@ const Intro: FC = () => {
             Full Stack Software Engineer
           </p>
           <p className='flex items-center justify-center text-base md:text-md mb-4 font-normal'>
-            <MapPin className='mr-2' />
+            <MapPin className='mr-2' size={18} />
             Oakville, Ontario
           </p>
         </motion.div>
