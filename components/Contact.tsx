@@ -45,7 +45,7 @@ const Contact: FC<ContactProps> = ({}) => {
         >
           My Email
         </a>{' '}
-        or through this form. Click on
+        or through this form. Click on{' '}
         <a
           className='underline text-blue-700 dark:text-blue-400'
           target='_blank'
