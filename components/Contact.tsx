@@ -45,7 +45,16 @@ const Contact: FC<ContactProps> = ({}) => {
         >
           My Email
         </a>{' '}
-        or through this form.
+        or through this form. Click on
+        <a
+          className='underline text-blue-700 dark:text-blue-400'
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://calendly.com/charliefeng2020/30min'
+        >
+          My Calendly
+        </a>{' '}
+        if you want to jump on a quick call with me.
       </p>
       <form
         className='mt-10 flex flex-col '
