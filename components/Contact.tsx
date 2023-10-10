@@ -54,7 +54,7 @@ const Contact: FC<ContactProps> = ({}) => {
         >
           My Calendly
         </a>{' '}
-        if If you're interested in a quick call.
+        if you're interested in a quick call.
       </p>
       <form
         className='mt-10 flex flex-col '
