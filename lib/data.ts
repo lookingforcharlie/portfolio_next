@@ -1,6 +1,7 @@
 import chatter from '@/public/chatter.png';
 import flashcards from '@/public/flashcards.png';
 import githubfinder from '@/public/githubFinder.png';
+import hv from '@/public/hv.png';
 import icons from '@/public/icons.png';
 import mathGame from '@/public/mathGame.png';
 import { BatteryFull, Dumbbell, GraduationCap } from 'lucide-react';
@@ -52,22 +53,22 @@ export const projectsData = [
     gitLink: 'https://github.com/lookingforcharlie/dalle-icon-generator',
     demo: 'https://youtu.be/8SIAU4kHrvM',
   },
-  {
-    title: 'Realtime Chatter',
-    description: 'A Real-time, mobile friendly chat room Application',
-    tags: [
-      'Next.js',
-      'TypeScript',
-      'Next AUTH',
-      'Redis',
-      'WebSocket',
-      'Tailwind CSS',
-    ],
-    imageUrl: chatter,
-    webLink: 'https://real-time-chatter.vercel.app',
-    gitLink: 'https://github.com/lookingforcharlie/real_time_chatter',
-    demo: 'https://youtu.be/fiGdjj3IXo8',
-  },
+  // {
+  //   title: 'Realtime Chatter',
+  //   description: 'A Real-time, mobile friendly chat room Application',
+  //   tags: [
+  //     'Next.js',
+  //     'TypeScript',
+  //     'Next AUTH',
+  //     'Redis',
+  //     'WebSocket',
+  //     'Tailwind CSS',
+  //   ],
+  //   imageUrl: chatter,
+  //   webLink: 'https://real-time-chatter.vercel.app',
+  //   gitLink: 'https://github.com/lookingforcharlie/real_time_chatter',
+  //   demo: 'https://youtu.be/fiGdjj3IXo8',
+  // },
   // {
   //   title: 'Flashcards',
   //   description:
@@ -94,6 +95,16 @@ export const projectsData = [
     webLink: 'https://youtu.be/IArmm4ae5hw',
     gitLink: 'https://github.com/lookingforcharlie/math-game',
     demo: 'https://youtu.be/IArmm4ae5hw',
+  },
+  {
+    title: 'Historic Villages',
+    description:
+      'A App allows user to search the direction towards the Historic Villages sites in Oakville',
+    tags: ['JavaScript', 'BootStrap', 'Map API'],
+    imageUrl: hv,
+    webLink: 'https://historic-villages.vercel.app/',
+    gitLink: 'https://github.com/lookingforcharlie/historicVillages',
+    demo: '#',
   },
   {
     title: 'GitHub Dev Finder',
