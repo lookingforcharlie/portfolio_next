@@ -102,7 +102,7 @@ const Intro: FC = () => {
             <CornerRightDown className='opacity-70 group-hover:translate-x-1 transition' />
           </a>
           <a
-            href='https://drive.google.com/file/d/1YjfnPX1I-6dqdR7ZtDSZ5g7YrvRid_2j/view?usp=sharing'
+            href='https://drive.google.com/file/d/1F6MZWAYEPg-esiP1R2oPO2NDG4QwcjJf/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
             className='group flex items-center justify-center gap-2 sm:gap-4 bg-gray-200 border border-gray-400 w-1/2 px-4 sm:px-7 py-2 sm:py-3 rounded-full shadow-md outline-none focus:scale-105 hover:scale-105 active:scale-105 transition dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
