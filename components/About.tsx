@@ -1,14 +1,14 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
-import { FC } from 'react';
-import { useSectionInView } from '../lib/hooks';
-import SessionHeading from './SessionHeading';
+import { motion } from 'framer-motion'
+import { FC } from 'react'
+import { useSectionInView } from '../lib/hooks'
+import SessionHeading from './SessionHeading'
 
 interface AboutProps {}
 
 const About: FC<AboutProps> = ({}) => {
-  const { ref } = useSectionInView('About');
+  const { ref } = useSectionInView('About')
 
   return (
     <motion.section
@@ -55,9 +55,19 @@ const About: FC<AboutProps> = ({}) => {
         </span>{' '}
         is a quote about my passion for learning made by a previous leader at
         Evenica.
+        <br />
+        <br />
+        <span className='text-amber-600'>
+          I want to be good at figuring out complex systems, possessing a
+          combination of very broad knowledge and I can take the wholistic view
+          of the entire problem, and specific knowledge in a few areas, so I can
+          figure out how to establish a broad base and where to go deep. Through
+          extensive practice using a wide range of tools, I aim to develop a
+          deep familiarity with the systems I am working with on a daily basis.{' '}
+        </span>
       </p>
     </motion.section>
-  );
-};
+  )
+}
 
-export default About;
+export default About
