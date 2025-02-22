@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import avatar from '@/public/avatar_min.png';
-import { motion } from 'framer-motion';
+import avatar from '@/public/avatar_min.png'
+import { motion } from 'framer-motion'
 import {
   CornerRightDown,
   DownloadCloud,
@@ -10,16 +10,16 @@ import {
   Mail,
   MapPin,
   Twitter,
-} from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FC } from 'react';
-import { useActiveSectionContext } from '../context/ActiveSectionContext';
-import { useSectionInView } from '../lib/hooks';
+} from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { FC } from 'react'
+import { useActiveSectionContext } from '../context/ActiveSectionContext'
+import { useSectionInView } from '../lib/hooks'
 
 const Intro: FC = () => {
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const { ref } = useSectionInView('Home', 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
+  const { ref } = useSectionInView('Home', 0.5)
 
   return (
     // scroll-mt-[10rem] make Header go to section precisely
@@ -94,15 +94,15 @@ const Intro: FC = () => {
             href='#contact'
             className='group flex items-center justify-center gap-2 sm:gap-4 w-1/2 bg-gray-900 text-white px-2 sm:px-7 py-2 sm:py-3 border border-gray-100 rounded-full shadow-lg outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition dark:text-white/60'
             onClick={() => {
-              setActiveSection('Contact');
-              setTimeOfLastClick(Date.now());
+              setActiveSection('Contact')
+              setTimeOfLastClick(Date.now())
             }}
           >
             Contact me here{' '}
             <CornerRightDown className='opacity-70 group-hover:translate-x-1 transition' />
           </a>
           <a
-            href='https://drive.google.com/file/d/1F6MZWAYEPg-esiP1R2oPO2NDG4QwcjJf/view?usp=sharing'
+            href='https://drive.google.com/file/d/1Sm0mU2_pxRsOow-PFFSuBpic7o8sx8RV/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
             className='group flex items-center justify-center gap-2 sm:gap-4 bg-gray-200 border border-gray-400 w-1/2 px-4 sm:px-7 py-2 sm:py-3 rounded-full shadow-md outline-none focus:scale-105 hover:scale-105 active:scale-105 transition dark:bg-white/10 dark:text-white/60 hover:dark:text-white'
@@ -147,7 +147,7 @@ const Intro: FC = () => {
         </div>
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro
